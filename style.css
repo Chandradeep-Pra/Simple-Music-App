@@ -1,0 +1,126 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: auto;
+}
+.topImg img{
+    width: 100%;
+    height: auto;
+}
+.titles{
+    width: 100%;
+    position: relative;
+    margin-top: -40%;
+    
+}
+.titles .canBlink{
+    text-align: center;
+    color: #757272b0;
+    font-size: 10vw;
+    font-family: 'lobster','cursive';
+    animation: textAnimate 5s linear infinite;
+    
+}
+.titles .pinkGlow{
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+    font-family: 'cursive';
+    text-shadow: 0 0 10px rgb(212, 56, 129);
+    
+}
+.antiBlur{
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 49%;
+    margin-top: 18%;
+    cursor: pointer;
+}
+.canBlink2{
+    text-align: center;
+    color: #757272b0;
+    font-size: 1vw;
+    font-family: 'lobster','cursive';
+    animation: tglAnim 5s linear infinite;
+}
+
+@keyframes textAnimate
+{
+    0%,16%,22.3%,50.1%,60%,63.1%,80%,90.1%,93%
+    {
+        color: #757272b0;
+        text-shadow: none;
+    }
+    16.1%,22.2%,50.2%,60.1%,63.2%,79.9%,90%,93.1%,100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px rgb(185, 214, 19),
+        0 0 20px rgb(185, 214, 19),
+        0 0 40px rgb(185, 214, 19),
+        0 0 80px rgb(185, 214, 19),
+        0 0 160px rgb(185, 214, 19);
+    }
+}
+@keyframes tglAnim
+{
+    0%,15%,21.3%,40.1%,50%,53.1%,70%,80.1%,83%
+    {
+        color: #757272b0;
+        text-shadow: none;
+    }
+    15.1%,21.2%,40.2%,56.1%,61.2%,77.9%,92%,100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #8f368f,
+        0 0 20px #8f368f,
+        0 0 40px #8f368f,
+        0 0 80px #8f368f,
+        0 0 160px #8f368f;
+    }
+}
+
+.contentBox{
+    display: flex;
+    position: relative;
+    
+    height: 300px;
+    width: 50%;
+    margin-top: -40%;
+    margin-left: 25%;
+}
+.contentBox img{
+    width: 200px;
+    height: 200px;
+    margin: 45px 0 20px 20px;
+    border-radius: 10%;
+}
+
+.imgBox{
+    width: 40%;
+    
+}
+.desc{
+    padding: 30px;
+    width: 60%;
+    
+    
+}
+.desc p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.desc button{
+    height: 40px;
+    width: 40px;
+    
+}
+
+
+
